@@ -8,8 +8,8 @@ import open3d as o3d
 # =========================================================
 # 路径配置
 # =========================================================
-CITY_LAS = r"E:\Homework\激光雷达\GroundFilter_MultiMethod_Output_Forest\PMF\pmf_ground.las"
-FOREST_LAS = r"E:\Homework\激光雷达\CSF_Output_Forest\CSF\csf_nonground.las"
+CITY_LAS = r"E:\Homework\激光雷达\City.las"
+FOREST_LAS = r"E:\Homework\激光雷达\Forest.las"
 
 # 每个点云最多显示多少点，太大会卡
 MAX_POINTS_VIS = 300000
