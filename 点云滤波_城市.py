@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 基于论文 CSF（Cloth Simulation Filtering）的 LAS 点云地面滤波完整程序
-不使用 matplotlib，改用 Plotly 输出交互式 2D/3D HTML，
 并在最后弹出 Open3D 可交互窗口。
 
 论文：
@@ -23,11 +22,8 @@ Zhang et al., 2016, An Easy-to-Use Airborne LiDAR Data Filtering Method Based on
    - csf_3d_surface.html             3D 可拖拽地表图
    - csf_3d_points_surface.html      3D 可拖拽点云+地表叠加图
 5. 最后弹出 Open3D 可交互窗口
-
-说明：
-- 这是“纯 CSF 版”，不保留 PMF 对比主流程
-- 分类阶段使用“点到 cloth surface 的垂向距离”近似论文中的 cloud-to-cloud 距离分类
-- 绘图全部使用 Plotly，输出交互式 HTML
+    - Ground: 棕色
+    - Non-ground: 蓝色
 """
 
 import os
